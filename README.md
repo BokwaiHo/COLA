@@ -14,8 +14,8 @@ COLA is a three-stage framework for curating high-quality calibration data to pr
 
 ```bash
 # Clone the repository
-git clone https://github.com/anonymous/cola-framework.git
-cd cola-framework
+git clone https://anonymous.4open.science/r/COLA-7D2C
+cd COLA
 
 # Install the package
 pip install -e .
@@ -54,7 +54,7 @@ calibration_samples = cola.run(
 You can also use the provided example script:
 
 ```bash
-python examples/run_cola.py \
+python run_cola.py \
     --model_name_or_path meta-llama/Llama-3-8b \
     --output_dir ./cola_output \
     --num_samples 128 \
@@ -67,7 +67,7 @@ python examples/run_cola.py \
 For targeted deployment (focusing on a specific capability):
 
 ```bash
-python examples/run_cola.py \
+python run_cola.py \
     --model_name_or_path meta-llama/Llama-3-8b \
     --output_dir ./cola_output \
     --num_samples 128 \
